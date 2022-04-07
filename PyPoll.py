@@ -59,22 +59,22 @@ winning_candidate_summary = (
     f"-------------------------\n"
     f"Winner: {winning_candidate}\n"
     f"Winning Vote Count: {winning_count}\n"
-    f"Winning Percentage: {winning_percentage}\n"
-    f"-------------------------\n")
+    f"Winning Percentage: {winning_percentage:.1f}%")
+    #f"-------------------------\n")
 print(winning_candidate_summary)
 
 
 #using the open() function with the "w" mode we will write data to the file.
 with open(file_to_save, "w") as txt_file:
 
-# Write some data to the file
-    txt_file.write(f"Total votes: {total_votes}\nCandidate Options: {candidate_options}\nCandidate Votes Received: {candidate_votes}\n")
+# Write the results to the file
+    txt_file.write(f"\nElection Results\n---------------------\nTotal votes: {total_votes}\n---------------------\n")
     for candidate_name in candidate_votes:
         votes = candidate_votes[candidate_name]
         vote_percentage = float(votes)/float(total_votes) * 100
         txt_file.write(f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
-    txt_file.write(winning_candidate_summary)
-    txt_file.write(f'\nCounties in the Election\n---------------------\nArapahoe \nDenver \nJefferson \n-- time of last edit {now}--')
+    txt_file.write(f'{winning_candidate_summary}\n---------------------\n')
+    txt_file.write(f'\n-- time of last edit {now}--')
     
    
     #Declare The winner of the election based on popular vote
@@ -88,3 +88,5 @@ with open(file_to_save, "w") as txt_file:
 
     # Close the file
     #outfile.close()
+    #txt_file.write(f'\nCounties in the Election\n---------------------\nArapahoe \nDenver \nJefferson \n-- time of last edit {now}--')
+    #Candidate Options: {candidate_options}\nCandidate Votes Received: {candidate_votes}\n
