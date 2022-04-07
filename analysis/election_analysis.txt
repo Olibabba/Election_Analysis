@@ -1,6 +1,18 @@
+Total votes: 369711
+Candidate Options: ['Charles Casper Stockham', 'Diana DeGette', 'Raymon Anthony Doane']
+Candidate Votes Received: {'Charles Casper Stockham': 85213, 'Diana DeGette': 272892, 'Raymon Anthony Doane': 11606}
+Charles Casper Stockham: 23.0% (85,213)
+Diana DeGette: 73.8% (272,892)
+Raymon Anthony Doane: 3.1% (11,606)
+-------------------------
+Winner: Diana DeGette
+Winning Vote Count: 272892
+Winning Percentage: 73.81224794501652
+-------------------------
+
 Counties in the Election
 ---------------------
 Arapahoe 
 Denver 
 Jefferson 
--- time of last edit 2022-04-06 22:18:09.959808--
+-- time of last edit 2022-04-06 23:54:04.231377--
